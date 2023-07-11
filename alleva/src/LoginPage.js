@@ -22,6 +22,23 @@ function LoginPage() {
         console.log('Sign in error:', error);
       });
   };
+
+  const handleSignUp = (event) => {
+    event.preventDefault();
+    auth.createUserWithEmailAndPassword(email, password)
+      .then((userCredential) => {
+        // User successfully signed up
+        const user = userCredential.user;
+        console.log('Sign up success:', user);
+
+
+      })
+      .catch((error) => {
+        // Handle sign up errors
+        console.log('Sign up error:', error);
+      });
+  };
+
   return (
     <div className="login-container">
       <header className = "login-header">
@@ -43,6 +60,7 @@ function LoginPage() {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button onClick={handleSignIn}>Sign In</button>
+        <button onClick={handleSignUp}>Sign Up</button>
   
       </div>
     </div>

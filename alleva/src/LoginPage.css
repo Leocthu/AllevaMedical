@@ -28,8 +28,11 @@
     width: 300px;
     padding: 7px;
     background-color: #d7ba89;
-    color: white;
+    color: rgba(0, 0, 0, 0.796);
     border: none;
     border-radius: 4px;
   }
   
+  .login-box button + button {
+    margin: 30px;
+  }
