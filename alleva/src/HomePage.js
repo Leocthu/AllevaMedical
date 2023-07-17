@@ -3,7 +3,8 @@ import './HomePage.css';
 import $ from 'jquery';
 import 'datatables.net';
 import 'datatables.net-dt';
-import imageSrc from './BodyReference.jpeg'
+import imageSrc from './BodyReference.jpeg';
+import allevamedicallogo from './allevamedicallogo.png';
 
 function TableComponent() {
   useEffect(() => {
@@ -34,21 +35,9 @@ function TableComponent() {
 
   return (
     <div>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          background: '#89c4f4',
-          height: '100px',
-          fontSize: '24px',
-          fontWeight: 'bold',
-          marginBottom: '20px',
-          color: '#4b77be'
-        }}
-      >
-        Alleva Medical HomePage
-      </div>
+      <header className = "login-header" style={{ backgroundColor: 'lightblue' }}>
+          <img src={allevamedicallogo} alt="Logo" className="logo-image" />
+      </header>
       <div style={{ display: 'flex', alignItems: 'flex-start', marginTop: '10px'}}>
         <div id="tableContainer" style={{ marginTop: '200px', marginRight: '50px'}}>
           <table>
@@ -83,7 +72,7 @@ function TableComponent() {
               ))}
             </tbody>
           </table>
-          
+
         </div>
 
         <div style={{ marginBottom: '250px' }}>
