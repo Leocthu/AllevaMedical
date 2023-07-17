@@ -34,43 +34,61 @@ function TableComponent() {
 
   return (
     <div>
-      <div id="tableContainer">
-        <table>
-          <thead>
-            <tr>
-              <th>Body Number</th>
-              <th>Body Part</th>
-              <th>Right Measurement</th>
-              <th>Left Measurement</th>
-            </tr>
-          </thead>
-          <tbody>
-            {tableData.map((row, index) => (
-              <tr key={row.id}>
-                <td>{index + 1}</td>
-                <td>{row.name}</td>
-                <td>
-                  <input
-                    type="text"
-                    value={row.userInput1}
-                    onChange={(e) => handleInputChange(e, index, 'userInput1')}
-                  />
-                </td>
-                <td>
-                  <input
-                    type="text"
-                    value={row.userInput2}
-                    onChange={(e) => handleInputChange(e, index, 'userInput2')}
-                  />
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          background: '#89c4f4',
+          height: '100px',
+          fontSize: '24px',
+          fontWeight: 'bold',
+          marginBottom: '20px',
+          color: '#4b77be'
+        }}
+      >
+        Alleva Medical HomePage
       </div>
+      <div style={{ display: 'flex', alignItems: 'flex-start', marginTop: '10px'}}>
+        <div id="tableContainer" style={{ marginTop: '200px', marginRight: '50px'}}>
+          <table>
+            <thead>
+              <tr>
+                <th>Body Number</th>
+                <th>Body Part</th>
+                <th>Left Measurement</th>
+                <th>Right Measurement</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tableData.map((row, index) => (
+                <tr key={row.id}>
+                  <td>{index + 1}</td>
+                  <td>{row.name}</td>
+                  <td>
+                    <input
+                      type="text"
+                      value={row.userInput1}
+                      onChange={(e) => handleInputChange(e, index, 'userInput1')}
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      value={row.userInput2}
+                      onChange={(e) => handleInputChange(e, index, 'userInput2')}
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          
+        </div>
 
-      <div style={{ display: 'flex', justifyContent: 'flex-start', paddingLeft: '100px', paddingTop: '100px'}}>
-        <img src={imageSrc} alt="Image" style={{ width: '40%', height: 'auto' }} />
+        <div style={{ marginBottom: '250px' }}>
+          <img src={imageSrc} alt="Image" style={{ width: '125%', height: 'auto', paddingLeft: '50px', paddingTop: '115px'}} />
+        </div>
       </div>
     </div>
   );
