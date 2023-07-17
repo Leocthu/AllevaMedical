@@ -1,7 +1,11 @@
 import React from 'react';
 import './App.css';
 import LoginPage from './LoginPage';
+import TableComponent from './HomePage';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { auth } from './firebase';
+
+
 
 function App() {
   const handleSignUp = (email, password) => {
@@ -31,11 +35,14 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <LoginPage handleSignUp={handleSignUp} handleSignIn={handleSignIn} />
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<LoginPage handleSignUp={handleSignUp} handleSignIn={handleSignIn} />} />
+          <Route path="/home" element={<TableComponent />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

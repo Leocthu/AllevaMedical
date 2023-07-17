@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
 import allevamedicallogo from './allevamedicallogo.png';
 import { auth } from './firebase';
