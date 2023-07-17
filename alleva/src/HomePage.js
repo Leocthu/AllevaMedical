@@ -38,9 +38,9 @@ function TableComponent() {
       <header className = "login-header" style={{ backgroundColor: 'lightblue' }}>
           <img src={allevamedicallogo} alt="Logo" className="logo-image" />
       </header>
-      <div style={{ display: 'flex', alignItems: 'flex-start', marginTop: '10px'}}>
-        <div id="tableContainer" style={{ marginTop: '200px', marginRight: '50px'}}>
-          <table>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', marginTop: '10px', backgroundColor: 'fceecc'}}>
+        <div id="tableContainer" style={{ marginTop: '200px', marginRight: '70px', paddingRight: '50px'}}>
+          <table style={{ width: '100%' }}>
             <thead>
               <tr>
                 <th>Body Number</th>
@@ -76,7 +76,7 @@ function TableComponent() {
         </div>
 
         <div style={{ marginBottom: '250px' }}>
-          <img src={imageSrc} alt="Image" style={{ width: '125%', height: 'auto', paddingLeft: '50px', paddingTop: '115px'}} />
+          <img src={imageSrc} alt="Image" style={{ width: '130%', height: 'auto', paddingTop: '40px', marginRight: '75px'}} />
         </div>
       </div>
     </div>
