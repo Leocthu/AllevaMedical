@@ -76,7 +76,7 @@ function TableComponent() {
         </div>
 
         <div style={{ marginBottom: '250px' }}>
-          <img src={imageSrc} alt="Image" style={{ width: '130%', height: 'auto', paddingTop: '40px', marginRight: '75px'}} />
+          <img src={imageSrc} alt="bodypic" style={{ width: '130%', height: 'auto', paddingTop: '40px', marginRight: '75px'}} />
         </div>
       </div>
     </div>
