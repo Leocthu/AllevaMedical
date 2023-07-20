@@ -30,20 +30,7 @@ function LoginPage() {
   };
 
   const handleSignUp = (event) => {
-    event.preventDefault();
-    auth.createUserWithEmailAndPassword(email, password)
-      .then((userCredential) => {
-        // User successfully signed up
-        const user = userCredential.user;
-        console.log('Sign up success:', user);
-
-        // Redirect to the home page
-        navigate('/home');
-      })
-      .catch((error) => {
-        // Handle sign up errors
-        console.log('Sign up error:', error);
-      });
+    navigate('/UserSignUp');
   };
 
   return (
@@ -54,7 +41,7 @@ function LoginPage() {
           
         </header>
         <div className="login-box">
-          <h2>Login</h2>
+          <h2>Sign In</h2>
           <input
             type="text"
             placeholder="Username"
@@ -67,9 +54,21 @@ function LoginPage() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button onClick={handleSignIn}>Sign In</button>
-          <button onClick={handleSignUp}>Sign Up</button>
-    
+        
+          <button className ="signin-btn" onClick={handleSignIn}>Sign In</button>
+          <div className="or-container">
+            <div className="line"></div>
+              <h5>OR</h5>
+            <div className="line"></div>
+          </div>
+          <div className = "signup-cont">
+            
+            <h4>New to Alleva?</h4>
+            <button className ="signup-btn"onClick={handleSignUp}>Sign Up</button>
+          </div>
+            
+       
+          
         </div>
       </div>
     
