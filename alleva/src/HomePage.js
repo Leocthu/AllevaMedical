@@ -38,7 +38,7 @@ function TableComponent() {
       <header className = "login-header" style={{ backgroundColor: 'lightblue' }}>
           <img src={allevamedicallogo} alt="Logo" className="logo-image" />
       </header>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', marginTop: '10px', backgroundColor: 'fceecc'}}>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', marginTop: '10px', backgroundColor: 'light grey'}}>
         <div id="tableContainer" style={{ marginTop: '200px', marginRight: '70px', paddingRight: '50px'}}>
           <table style={{ width: '100%' }}>
             <thead>
