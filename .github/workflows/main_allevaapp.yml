@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: '18.x'
 
+      - name: Change Directory to 'alleva' Sub-Repository
+      run: cd alleva
+
       - name: npm install, build, and test
         run: |
           npm install
