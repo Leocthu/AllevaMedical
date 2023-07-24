@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/ad3bc164-26b6-4d18-adf5-9bf240dfb48c/resourceGroups/AllevaWebApp/providers/Microsoft.Web/sites/AllevaApp",
+    "appService.deploySubpath": "alleva"
+}
