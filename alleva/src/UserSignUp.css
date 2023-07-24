@@ -12,38 +12,44 @@
     margin-top: 20px;
 }
 
+.signupbtn:hover{
+  background-color: #ccb485;
+}
+
 .SignUp-container {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    align-items: center;
-    height: 100vh;
-    color: rgb(1, 39, 116);
-  }
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  height: 100vh;
+  color: rgb(1, 39, 116);
+}
 
-  .SignUp-box {
-    margin-top: 100px;
-    border-style: groove;
-    border-width: 10px;
-    background-color: #d4ebf2;
-    width: 30%;
-    height: 40%;
-    padding-top: 40px;
-    border-radius: 30px;  
-    padding-bottom: 20px;  
-  }
+.SignUp-box {
+  margin-top: 100px;
+  border-style: groove;
+  border-width: 10px;
+  background-color: #d4ebf2;
+  width: 30%;
+  height: 40%;
+  padding-top: 40px;
+  border-radius: 30px;  
+  padding-bottom: 20px;  
+}
   
-  .SignUp-box input {
-    width: 70%;
-    margin-bottom: 10px;
-    padding: 8px;
-    
-  }
+.SignUp-box input {
+  width: 70%;
+  margin-bottom: 10px;
+  padding: 8px;  
+}
 
+.back-to-signin-btn {
+  border: none;
+  color: rgb(1, 39, 116);
+  background-color: #d4ebf2;
+}
 
-  .back-to-signin-btn {
-    border: none;
-    text-decoration: underline;
-    color: rgb(1, 39, 116);
-    background-color: #d4ebf2;
-  }
+.back-to-signin-btn:hover{
+  text-decoration: underline;
+}
+

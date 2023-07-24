@@ -9,6 +9,7 @@ import { auth } from './firebase';
 function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const navigate = useNavigate();
 
@@ -26,6 +27,8 @@ function LoginPage() {
       .catch((error) => {
         // Handle login errors
         console.log('Sign in error:', error);
+
+        setErrorMessage('Invalid Username or Password')
       });
   };
 
@@ -42,6 +45,7 @@ function LoginPage() {
         </header>
         <div className="login-box">
           <h2>Sign In</h2>
+          
           <input
             type="text"
             placeholder="Username"
@@ -54,6 +58,7 @@ function LoginPage() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
+          {errorMessage && <p className="error-message">{errorMessage}</p>}
         
           <button className ="signin-btn" onClick={handleSignIn}>Sign In</button>
           <div className="or-container">
