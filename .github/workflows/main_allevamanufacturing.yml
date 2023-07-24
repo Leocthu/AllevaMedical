@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: '18.x'
 
-      - name: cd alleva, npm install, build
+      - name: npm install, build
         run: 
           cd alleva
           npm install
