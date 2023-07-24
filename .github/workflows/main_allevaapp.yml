@@ -22,7 +22,7 @@ jobs:
           node-version: '18.x'
 
       - name: Change Directory to 'alleva' Sub-Repository
-        run: cd AllevaMedical/alleva
+        run: cd alleva
 
       - name: npm install, build, and test
         run: |
